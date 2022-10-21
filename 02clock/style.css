@@ -1,0 +1,57 @@
+html {
+    font-size: 10px;
+    background: url("./computer.jpg") bottom center;
+    background-size: cover;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.clock {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-face {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 10px solid rgb(65, 8, 8);
+    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.75),
+                inset 2px 2px 10px 1px black;
+    background-color: rgba(240, 248, 255, .9);
+}
+
+.hand {
+    width: 135px;
+    position: absolute;
+    padding: 4px;
+    border-radius: 7px;
+    background-color: black;
+    top: 50%;
+    right: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.hour-hand {
+    padding: 5px;
+    width: 100px;
+}
+
+.second-hand {
+    padding: 2px;
+}
+
+.center {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}

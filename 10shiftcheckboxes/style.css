@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.inbox {
+    background-color: beige;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(100,100,100,.3);
+    border-radius: 16px;
+    overflow-x: hidden;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.item {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid rgba(100,100,100,.3);
+    width: 100%;
+    color: #212121;
+}
+
+input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+input:checked + p {
+    text-decoration: line-through;
+  }

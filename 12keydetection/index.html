@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key detection by josecentenodev</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+    <h1>Type "josecenteno"</h1>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        const pressed = [];
+        const secretCode = 'josecenteno'
+        window.addEventListener('keyup', (e)=> {
+            console.log(e.key)
+            // document.querySelector('h1').innerHTML = `<p>Key: ${e.key},</p><p>KeyCode: ${e.keyCode}</p>`;
+            pressed.push(e.key);
+            pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+            if(pressed.join('').includes(secretCode)) {
+                alert('YES! YOU DID IT!')
+                cornify_add();
+            }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .hl {
+    background-color: #ffc600;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin-top: 2rem;
+    width: 15rem;
+  }
+  li {
+    list-style: none;
+    padding: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: .7rem 2rem;
+    font-size: 1rem;
+    outline: 0;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+  }
+
+  .suggestions {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    position: relative;
+    /* border: 1px solid #e1e1e1; */
+    text-align: center;
+  }
+  
+
+  .suggestions li:nth-child(even) {
+    transform: perspective(100px) rotateX(2deg) translateY(1px) scale(1.001);
+    background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+  }
+  
+  .suggestions li:nth-child(odd) {
+    transform: perspective(100px) rotateX(-2deg) translateY(1px);
+    background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+  }
+  
+  span.population {
+    font-size: 15px;
+  }
