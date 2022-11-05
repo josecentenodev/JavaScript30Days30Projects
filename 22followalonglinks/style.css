@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fafafa;
+    font-family: 'Poor Story', cursive;
+    height: 100vh;
+}
+  
+nav {
+    width: 100%;
+    height: 7em;
+    margin: 0px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+li {
+    padding: 10px;
+    border-radius: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #212121;
+    text-align: justify;
+    
+}
+
+
+p {
+    font-size: 25px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 75px;
+    margin: 25px;
+    text-align: justify;
+    position: relative;
+}
+
+.highlight {
+    background-color: rgb(200 60 67 / 20%);
+    border-radius: 11px;
+    padding: 5px;
+    transition: all 0.2s;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
